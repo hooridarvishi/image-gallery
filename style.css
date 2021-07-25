@@ -86,7 +86,7 @@ h1 {
   align-items: center;
   transform: translateY(-100%);
   transition: 250ms;
-  padding: 50px;
+  padding: 45px;
 }
 
 #selectedImage {

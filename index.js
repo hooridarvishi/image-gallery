@@ -52,14 +52,18 @@ let selectedIndex = null;
 imageIndexes.forEach((i) => {
   const image = document.createElement('img');
   // image.src = `images/nature-${i}.png`;
-  image.src = `https://ik.imagekit.io/ceo/nature-${i}.png`;
+  image.src = `https://ik.imagekit.io/ceo/tr:w-600/nature-${i}.png`;
   image.classList.add('galleryImage');
   image.classList.add('nature');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
     // selectedImage.src = `images/nature-${i}.png`;
-    selectedImage.src = `https://ik.imagekit.io/ceo/nature-${i}.png`;
+    selectedImage.src = `https://ik.imagekit.io/ceo/tr:w-1000/nature-${i}.png`;
+    selectedImage.srcset = `
+    https://ik.imagekit.io/ceo/tr:w-400/nature-${i}.png 400w,
+    https://ik.imagekit.io/ceo/tr:w-800/nature-${i}.png 800w,
+    https://ik.imagekit.io/ceo/tr:w-1200/nature-${i}.png 1200w`;
     selectedImage.alt = `Florida nature photo ${i}`;
   })
 
@@ -73,14 +77,18 @@ let selectedPetsIndex = null;
 imagePetsIndexes.forEach((i) => {
   const image = document.createElement('img');
   // image.src = `images/pets-${i}.png`;
-  image.src = `https://ik.imagekit.io/ceo/pets-${i}.png`;
+  image.src = `https://ik.imagekit.io/ceo/tr:w-600/pets-${i}.png`;
   image.classList.add('galleryImage');
   image.classList.add('pets');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
     // selectedImage.src = `images/pets-${i}.png`;
-    selectedImage.src = `https://ik.imagekit.io/ceo/pets-${i}.png`;
+    selectedImage.src = `https://ik.imagekit.io/ceo/tr:w-1000/pets-${i}.png`;
+    selectedImage.srcset = `
+    https://ik.imagekit.io/ceo/tr:w-400/pets-${i}.png 400w,
+    https://ik.imagekit.io/ceo/tr:w-800/pets-${i}.png 800w,
+    https://ik.imagekit.io/ceo/tr:w-1200/pets-${i}.png 1200w`;
     selectedImage.alt = `Pets!`;
   })
 
@@ -94,14 +102,18 @@ let selectedArtIndex = null;
 imageArtIndexes.forEach((i) => {
   const image = document.createElement('img');
   // image.src = `images/art-${i}.png`;
-  image.src = `https://ik.imagekit.io/ceo/art-${i}.png`;
+  image.src = `https://ik.imagekit.io/ceo/tr:w-600/art-${i}.png`;
   image.classList.add('galleryImage');
   image.classList.add('art');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
     // selectedImage.src = `images/art-${i}.png`;
-    selectedImage.src = `https://ik.imagekit.io/ceo/art-${i}.png`;
+    selectedImage.src = `https://ik.imagekit.io/ceo/tr:w-1000/art-${i}.png`;
+    selectedImage.srcset = `
+    https://ik.imagekit.io/ceo/tr:w-400/art-${i}.png 400w,
+    https://ik.imagekit.io/ceo/tr:w-800/art-${i}.png 800w,
+    https://ik.imagekit.io/ceo/tr:w-1200/art-${i}.png 1200w`;
     selectedImage.alt = `Art!`;
   })
 
