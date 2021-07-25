@@ -51,13 +51,15 @@ let selectedIndex = null;
 
 imageIndexes.forEach((i) => {
   const image = document.createElement('img');
-  image.src = `images/nature-${i}.png`;
+  // image.src = `images/nature-${i}.png`;
+  image.src = `https://ik.imagekit.io/ceo/nature-${i}.png`;
   image.classList.add('galleryImage');
   image.classList.add('nature');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
-    selectedImage.src = `images/nature-${i}.png`;
+    // selectedImage.src = `images/nature-${i}.png`;
+    selectedImage.src = `https://ik.imagekit.io/ceo/nature-${i}.png`;
     selectedImage.alt = `Florida nature photo ${i}`;
   })
 
@@ -70,13 +72,15 @@ let selectedPetsIndex = null;
 
 imagePetsIndexes.forEach((i) => {
   const image = document.createElement('img');
-  image.src = `images/pets-${i}.png`;
+  // image.src = `images/pets-${i}.png`;
+  image.src = `https://ik.imagekit.io/ceo/pets-${i}.png`;
   image.classList.add('galleryImage');
   image.classList.add('pets');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
-    selectedImage.src = `images/pets-${i}.png`;
+    // selectedImage.src = `images/pets-${i}.png`;
+    selectedImage.src = `https://ik.imagekit.io/ceo/pets-${i}.png`;
     selectedImage.alt = `Pets!`;
   })
 
@@ -89,13 +93,15 @@ let selectedArtIndex = null;
 
 imageArtIndexes.forEach((i) => {
   const image = document.createElement('img');
-  image.src = `images/art-${i}.png`;
+  // image.src = `images/art-${i}.png`;
+  image.src = `https://ik.imagekit.io/ceo/art-${i}.png`;
   image.classList.add('galleryImage');
   image.classList.add('art');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
-    selectedImage.src = `images/art-${i}.png`;
+    // selectedImage.src = `images/art-${i}.png`;
+    selectedImage.src = `https://ik.imagekit.io/ceo/art-${i}.png`;
     selectedImage.alt = `Art!`;
   })
 
