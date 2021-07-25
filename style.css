@@ -23,9 +23,11 @@ h1 {
 
 .btn {
   background: burlywood;
+  background: lightgray;
   border: none;
   border-radius: 3px;
   color: ghostwhite;
+  color: #2e353c;
   cursor: pointer;
   font-size: 16px;
   padding: 10px;
@@ -34,11 +36,12 @@ h1 {
 }
 
 .btn:hover {
-  background: gray;
+  background: rgb(201, 201, 201);
 }
 
 .btn.active {
   background: slategray;
+  color: whitesmoke;
 }
 
 #gallery {
