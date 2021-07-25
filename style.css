@@ -90,11 +90,12 @@ h1 {
 
 @media screen and (max-width: 800px) {
   .container {
-    padding: 10px 20px;
+    padding: 20px;
   }
 
   h1 {
     font-size: 38px;
+    margin-top: 0;
   }
 
   #popUp {
