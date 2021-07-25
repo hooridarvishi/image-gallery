@@ -13,7 +13,7 @@ function showNature() {
   var i;
   var galleryImage = document.getElementsByClassName("galleryImage");
   for (i = 0; i < galleryImage.length; i++) {
-		if (galleryImage[i].classList.contains('puppies') || galleryImage[i].classList.contains('chickens')) {
+		if (galleryImage[i].classList.contains('art') || galleryImage[i].classList.contains('pets')) {
     	galleryImage[i].classList.add('hide');
 		} else {
     	galleryImage[i].classList.remove('hide');
@@ -21,11 +21,11 @@ function showNature() {
   }
 }
 
-function showPuppies() {
+function showPets() {
   var i;
   var galleryImage = document.getElementsByClassName("galleryImage");
   for (i = 0; i < galleryImage.length; i++) {
-		if (galleryImage[i].classList.contains('nature') || galleryImage[i].classList.contains('chickens')) {
+		if (galleryImage[i].classList.contains('nature') || galleryImage[i].classList.contains('art')) {
     	galleryImage[i].classList.add('hide');
 		} else {
     	galleryImage[i].classList.remove('hide');
@@ -33,11 +33,11 @@ function showPuppies() {
   }
 }
 
-function showChickens() {
+function showArt() {
   var i;
   var galleryImage = document.getElementsByClassName("galleryImage");
   for (i = 0; i < galleryImage.length; i++) {
-		if (galleryImage[i].classList.contains('nature') || galleryImage[i].classList.contains('puppies')) {
+		if (galleryImage[i].classList.contains('nature') || galleryImage[i].classList.contains('pets')) {
     	galleryImage[i].classList.add('hide');
 		} else {
     	galleryImage[i].classList.remove('hide');
@@ -69,20 +69,39 @@ imageIndexes.forEach((i) => {
 
 
 
-// Chicken Pop up
-let imageChickenIndexes = [1, 2];
-let selectedChickenIndex = null;
+// Pets Pop up
+let imagePetsIndexes = [1, 2, 3];
+let selectedPetsIndex = null;
 
-imageChickenIndexes.forEach((i) => {
+imagePetsIndexes.forEach((i) => {
   const image = document.createElement('img');
-  image.src = `images/chickens-${i}.jpeg`;
+  image.src = `images/pets-${i}.png`;
   image.classList.add('galleryImage');
-  image.classList.add('chickens');
+  image.classList.add('pets');
 
   image.addEventListener('click', () => {
     popUp.style.transform = `translateY(0)`;
-    selectedImage.src = `images/chickens-${i}.jpeg`;
-    selectedImage.alt = `Chickens!`;
+    selectedImage.src = `images/pets-${i}.png`;
+    selectedImage.alt = `Pets!`;
+  })
+
+  gallery.appendChild(image);
+});
+
+// Art Pop up
+let imageArtIndexes = [1];
+let selectedArtIndex = null;
+
+imageArtIndexes.forEach((i) => {
+  const image = document.createElement('img');
+  image.src = `images/art-${i}.png`;
+  image.classList.add('galleryImage');
+  image.classList.add('art');
+
+  image.addEventListener('click', () => {
+    popUp.style.transform = `translateY(0)`;
+    selectedImage.src = `images/art-${i}.png`;
+    selectedImage.alt = `Art!`;
   })
 
   gallery.appendChild(image);
