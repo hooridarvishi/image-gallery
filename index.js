@@ -1,7 +1,7 @@
 // Image filtering functions
 
 function showAll() {
-  var galleryImage = document.getElementsByClassName("galleryImage");
+  let galleryImage = document.getElementsByClassName("galleryImage");
   for (let i = 0; i < galleryImage.length; i++) {
 		if (galleryImage[i].classList.contains('hide')) {
     	galleryImage[i].classList.remove('hide');
@@ -10,9 +10,8 @@ function showAll() {
 }
 
 function showNature() {
-  var i;
-  var galleryImage = document.getElementsByClassName("galleryImage");
-  for (i = 0; i < galleryImage.length; i++) {
+  let galleryImage = document.getElementsByClassName("galleryImage");
+  for (let i = 0; i < galleryImage.length; i++) {
 		if (galleryImage[i].classList.contains('art') || galleryImage[i].classList.contains('pets')) {
     	galleryImage[i].classList.add('hide');
 		} else {
@@ -22,9 +21,8 @@ function showNature() {
 }
 
 function showPets() {
-  var i;
-  var galleryImage = document.getElementsByClassName("galleryImage");
-  for (i = 0; i < galleryImage.length; i++) {
+  let galleryImage = document.getElementsByClassName("galleryImage");
+  for (let i = 0; i < galleryImage.length; i++) {
 		if (galleryImage[i].classList.contains('nature') || galleryImage[i].classList.contains('art')) {
     	galleryImage[i].classList.add('hide');
 		} else {
@@ -34,9 +32,8 @@ function showPets() {
 }
 
 function showArt() {
-  var i;
-  var galleryImage = document.getElementsByClassName("galleryImage");
-  for (i = 0; i < galleryImage.length; i++) {
+  let galleryImage = document.getElementsByClassName("galleryImage");
+  for (let i = 0; i < galleryImage.length; i++) {
 		if (galleryImage[i].classList.contains('nature') || galleryImage[i].classList.contains('pets')) {
     	galleryImage[i].classList.add('hide');
 		} else {
@@ -66,8 +63,6 @@ imageIndexes.forEach((i) => {
 
   gallery.appendChild(image);
 });
-
-
 
 // Pets Pop up
 let imagePetsIndexes = [1, 2, 3];
@@ -113,3 +108,14 @@ popUp.addEventListener('click' , () => {
   popUp.src = '';
   popUp.alt = '';
 });
+
+// Add active class to the selected button
+let btnContainer = document.getElementById("btnContainer");
+let btns = btnContainer.getElementsByClassName("btn");
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
