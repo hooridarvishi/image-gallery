@@ -96,7 +96,7 @@ imagePetsIndexes.forEach((i) => {
 });
 
 // Art Pop up
-let imageArtIndexes = [1, 2, 3];
+let imageArtIndexes = [1, 2, 3, 4];
 let selectedArtIndex = null;
 
 imageArtIndexes.forEach((i) => {
