@@ -124,6 +124,7 @@ imageArtIndexes.forEach((i) => {
 popUp.addEventListener('click' , () => {
   popUp.style.transform = `translateY(-100%)`;
   popUp.src = '';
+  popUp.srcset = '';
   popUp.alt = '';
 });
 
