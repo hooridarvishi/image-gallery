@@ -1,6 +1,6 @@
 ## About The Image Gallery Project
 
-This project was built using HTML, CSS, CSS Grid for the responsive grid, and JavaScript for the filtering system.
+This project was built using HTML, CSS (and CSS Grid for the responsive grid), and JavaScript for the filtering system.
 
 The photos used in the gallery were taken from me.
 
