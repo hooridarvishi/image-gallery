@@ -146,3 +146,12 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// ====================
+// Service Worker
+// ====================
+
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
