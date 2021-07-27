@@ -53,6 +53,7 @@ imageIndexes.forEach((i) => {
   const image = document.createElement('img');
   // image.src = `images/nature-${i}.png`;
   image.src = `https://ik.imagekit.io/ceo/tr:w-600/nature-${i}.png`;
+  image.alt = `Florida nature photo #${i}!`;
   image.classList.add('galleryImage');
   image.classList.add('nature');
 
@@ -78,6 +79,7 @@ imagePetsIndexes.forEach((i) => {
   const image = document.createElement('img');
   // image.src = `images/pets-${i}.png`;
   image.src = `https://ik.imagekit.io/ceo/tr:w-600/pets-${i}.png`;
+  image.alt = `Pets (Macs and Cheeko) photo #${i}!`;
   image.classList.add('galleryImage');
   image.classList.add('pets');
 
@@ -103,6 +105,7 @@ imageArtIndexes.forEach((i) => {
   const image = document.createElement('img');
   // image.src = `images/art-${i}.png`;
   image.src = `https://ik.imagekit.io/ceo/tr:w-600/art-${i}.png`;
+  image.alt = `Photo #${i} of my random artwork!`;
   image.classList.add('galleryImage');
   image.classList.add('art');
 
