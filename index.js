@@ -146,7 +146,10 @@ for (let i = 0; i < btns.length; i++) {
 // Service Worker
 // ====================
 
-document.cookie = "witcher=Geralt; SameSite=None; Secure"
+Cookies.set('name', 'value', {
+  sameSite: 'none',
+  secure: true
+})
 
 if ("serviceWorker" in navigator) {
   // register service worker
